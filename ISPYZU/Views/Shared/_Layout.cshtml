@@ -27,12 +27,23 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Login", "Index", "Admin", new { area = "Login", id = "" }, null)</li>
+               
+
+                <ul class="nav navbar-nav navbar-right" style="color:white">
+
+                    @if (Session["UserName"] != null)
+                    {
+                        <h4 style="color:white">Hello  @Session["UserName"]</h4>
+                        @Html.ActionLink("Logout", "Logout", "Home")
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Login", "Index", "Admin", new { area = "Login", id = "" }, null)</li>
+                    }
+
                 </ul>
-                    
-                    
-                
+
+
             </div>
         </div>
     </div>

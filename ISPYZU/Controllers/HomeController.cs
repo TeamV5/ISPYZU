@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace ISPYZU.Controllers
 {
     public class HomeController : Controller
@@ -25,6 +26,12 @@ namespace ISPYZU.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        public ActionResult Logout()
+        {
+            Session.Clear();
+            return RedirectToAction("Index", "Home", "Home");
+            
         }
     }
 }

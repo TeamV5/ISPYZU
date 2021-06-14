@@ -26,7 +26,7 @@
             <label>Password</label>
             @*instead of this-Input type text <input></input>*@
             @Html.ValidationMessageFor(x => x.Password, "", new { @class = "error" })
-            @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+            @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
 
         </div>
 
