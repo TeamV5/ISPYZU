@@ -17,28 +17,30 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("ISPYZU", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+               
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Courses", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Faculty", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Campus life", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home",new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Faculty", "Index", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Campus life", "Index", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "", id = "" }, null)</li>
                 </ul>
-               
+
 
                 <ul class="nav navbar-nav navbar-right" style="color:white">
 
                     @if (Session["UserName"] != null)
                     {
-                        <h4 style="color:white">Hello  @Session["UserName"]</h4>
-                        @Html.ActionLink("Logout", "Logout", "Home")
+                     @Html.ActionLink("Admin", "UserDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
+                    <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
+                    
                     }
                     else
                     {
-                        <li>@Html.ActionLink("Login", "Index", "Admin", new { area = "Login", id = "" }, null)</li>
+                        <li>@Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "Ajax" }, null)</li>
                     }
 
                 </ul>
@@ -48,7 +50,11 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="col-md-12">
+
+            @RenderBody()
+        </div>
+        
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
@@ -60,5 +66,7 @@
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
 </body>
 </html>

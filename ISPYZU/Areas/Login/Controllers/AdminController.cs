@@ -10,9 +10,21 @@ namespace ISPYZU.Areas.Login.Controllers
     public class AdminController : Controller
     {
          TestDbContext adminDB = new TestDbContext();
-        public ActionResult Index()
+
+
+        public ActionResult Ajax(string id)
+        {
+            if (Request.IsAjaxRequest())
+                return PartialView(id);
+            else
+                return View(id);
+        }
+
+
+        public ActionResult Index(string id)
         {
             return View();
+            
         }
 
         
@@ -62,7 +74,18 @@ namespace ISPYZU.Areas.Login.Controllers
         public ActionResult Logout()
         {
             Session.Clear();
-            return RedirectToAction("Index", "Admin");
+            return RedirectToAction("Ajax", "Admin");
+        }
+
+
+        public ActionResult Teacher()
+        {
+            return View();
+        }
+
+        public ActionResult Student()
+        {
+            return View();
         }
 
 

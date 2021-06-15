@@ -168,88 +168,88 @@ C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.CopyComplete
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.dll
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.pdb
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\ISPYZU.dll.config
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\ISPYZU.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\ISPYZU.pdb
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\csc.exe
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\csc.exe.config
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\csc.rsp
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\csi.exe
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\csi.exe.config
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\csi.rsp
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.AppContext.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Console.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.IO.Compression.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.IO.Pipes.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Security.Claims.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.ValueTuple.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Xml.XPath.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\vbc.exe
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\vbc.exe.config
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\vbc.rsp
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\VBCSCompiler.exe
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\Antlr3.Runtime.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\EntityFramework.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\EntityFramework.SqlServer.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\Newtonsoft.Json.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Helpers.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Mvc.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Optimization.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Razor.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.WebPages.Deployment.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.WebPages.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.WebPages.Razor.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\WebGrease.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\EntityFramework.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\EntityFramework.SqlServer.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Helpers.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Mvc.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Optimization.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.Razor.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.WebPages.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.WebPages.Deployment.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\System.Web.WebPages.Razor.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\Newtonsoft.Json.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\Antlr3.Runtime.pdb
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\bin\zh-Hans\System.Web.Optimization.resources.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csprojAssemblyReference.cache
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb.resources
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb1.resources
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb2.resources
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.GenerateResource.cache
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.CoreCompileInputs.cache
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.CopyComplete
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.dll
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.pdb
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\ISPYZU.dll.config
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\ISPYZU.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\ISPYZU.pdb
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\csc.exe
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\csc.exe.config
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\csc.rsp
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\csi.exe
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\csi.exe.config
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\csi.rsp
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.AppContext.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Console.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.IO.Compression.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.IO.Pipes.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Security.Claims.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.ValueTuple.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Xml.XPath.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\vbc.exe
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\vbc.exe.config
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\vbc.rsp
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\VBCSCompiler.exe
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\Antlr3.Runtime.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\EntityFramework.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\EntityFramework.SqlServer.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\Newtonsoft.Json.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Helpers.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Mvc.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Optimization.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Razor.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.WebPages.Deployment.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.WebPages.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.WebPages.Razor.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\WebGrease.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\EntityFramework.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\EntityFramework.SqlServer.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Helpers.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Mvc.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Optimization.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.Razor.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.WebPages.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.WebPages.Deployment.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\System.Web.WebPages.Razor.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\Newtonsoft.Json.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\Antlr3.Runtime.pdb
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csprojAssemblyReference.cache
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb.resources
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb1.resources
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb2.resources
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.GenerateResource.cache
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.CoreCompileInputs.cache
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.CopyComplete
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.dll
+C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\obj\Debug\ISPYZU.pdb

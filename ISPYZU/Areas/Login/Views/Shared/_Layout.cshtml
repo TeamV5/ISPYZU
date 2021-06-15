@@ -25,22 +25,21 @@
                 </ul>
                 <ul class="nav navbar-nav">
 
-                    <li> @Html.ActionLink("Admin", "Index", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
-                    <li>@Html.ActionLink("Teacher", "Index", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
-                    <li>@Html.ActionLink("student", "Index", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                    
 
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right" style="color:white">
 
-                    @if(Session["UserName"] != null)
+                    @if (Session["UserName"] != null)
                     {
-                        <h4 style="color:white">Hello  @Session["UserName"]</h4>
-                        @Html.ActionLink("Logout", "Logout", "Admin")
+                        @Html.ActionLink("Admin", "UserDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
+                        <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Admin") </h4>
                     }
-                        else
-                        {
-                        <li>@Html.ActionLink("ISPYZU", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+                    else
+                    {
+                        <li>@Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "Ajax" }, null)</li>
+                        //<li>@Html.ActionLink("ISPYZU", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
                     }
 
                 </ul>
