@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPYZU", "ISPYZU\ISPYZU.csproj", "{63555F6F-0AE9-4AB1-9B08-4E730331C70A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEMYPROJECT", "D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\SEMYPROJECT.csproj", "{0B34653F-5E55-48E3-8892-7D11EFE0E603}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{63555F6F-0AE9-4AB1-9B08-4E730331C70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63555F6F-0AE9-4AB1-9B08-4E730331C70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63555F6F-0AE9-4AB1-9B08-4E730331C70A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B34653F-5E55-48E3-8892-7D11EFE0E603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B34653F-5E55-48E3-8892-7D11EFE0E603}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B34653F-5E55-48E3-8892-7D11EFE0E603}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B34653F-5E55-48E3-8892-7D11EFE0E603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

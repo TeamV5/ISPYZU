@@ -5,15 +5,23 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
+
 namespace ISPYZU.Models
 {
   public class User
   {
-    //System.ComponentModel.DataAnnotations.KeyAttribute
-    //System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute
-    [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
-    [Required]
-    public int Id { set; get; }
+
+
+
+
+        //System.ComponentModel.DataAnnotations.KeyAttribute
+        //System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute
+        //[Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+
+
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { set; get; }
+
 
     [Required]
     [MaxLength(30, ErrorMessage = "{0}长度不能超过{1}个字符!")]

@@ -25,9 +25,9 @@
                 </ul>
                 <ul class="nav navbar-nav">
 
-                    <li> @Html.ActionLink(" ADD Admin", "Index", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
-                    <li> @Html.ActionLink(" ADD Student", "Index", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
-                    <li> @Html.ActionLink(" ADD Teacher", "Index", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                    <li> @Html.ActionLink("Manage Admin", "Index", "Users", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                    <li> @Html.ActionLink("Manage Student", "UserDashBoard", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                    <li> @Html.ActionLink("Manage Teacher", "UserDashBoard", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right" style="color:white">

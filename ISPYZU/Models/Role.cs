@@ -7,7 +7,7 @@ namespace ISPYZU.Models
   public class Role
   {
     [Required]
-    [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+    [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { set; get; }
 
     [Required]

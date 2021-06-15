@@ -19,22 +19,21 @@ namespace ISPYZU.App_Code
             
             var roles = new List<Role>
       {
-        new Role { Id = 1, RoleName = "Teacher", Description = "managing_department" },
-        new Role { Id = 2, RoleName = "Admin", Description = "directing_department"},
-        new Role { Id = 3, RoleName = "Student", Description = "programmer_department"}
+        new Role { RoleName = "Teacher", Description = "Managing_department" },
+        new Role { RoleName = "Admin", Description = "Directing_department"},
+        new Role { RoleName = "Student", Description = "Learning_department"}
       };
             roles.ForEach(r => context.Roles.Add(r));
             context.SaveChanges();
 
             var users = new List<User>
       {
-        new User { Id=1, UserName="wangjie",  Password="123456", RoleId=1},
-        new User { Id=2, UserName ="senior1", Password="123456", RoleId=2},
-        new User { Id=3, UserName ="senior2", Password="123456", RoleId=2},
-        new User { Id=4, UserName="junior1",  Password="123456", RoleId=3},
-        new User { Id=5, UserName="junior2",  Password="123456", RoleId=3},
-        new User { Id=6, UserName="junior3",  Password="123456", RoleId=3},
-        new User { Id=7, UserName="admin",  Password="admin1234", RoleId=3}
+        new User {UserName="Noman",  Password="123456", RoleId=2},
+        new User {UserName="Shorif",  Password="123456", RoleId=2},
+        new User {UserName="Siam",  Password="123456", RoleId=2},
+        new User {UserName="Admin",  Password="123456", RoleId=2},
+
+
       };
             users.ForEach(u => context.Users.Add(u));
             context.SaveChanges();

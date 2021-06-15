@@ -52,6 +52,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -127,23 +133,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Login\Controllers\UsersController.cs" />
     <Compile Include="Areas\Login\LoginAreaRegistration.cs" />
     <Compile Include="Areas\Login\Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106121744298_createdb.cs" />
-    <Compile Include="Migrations\202106121744298_createdb.designer.cs">
-      <DependentUpon>202106121744298_createdb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106121807521_createdb1.cs" />
-    <Compile Include="Migrations\202106121807521_createdb1.designer.cs">
-      <DependentUpon>202106121807521_createdb1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106121821566_createdb2.cs" />
-    <Compile Include="Migrations\202106121821566_createdb2.designer.cs">
-      <DependentUpon>202106121821566_createdb2.cs</DependentUpon>
+    <Compile Include="Migrations\202106151731308_createdb.cs" />
+    <Compile Include="Migrations\202106151731308_createdb.designer.cs">
+      <DependentUpon>202106151731308_createdb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Role.cs" />
@@ -211,6 +210,11 @@
     <Content Include="Areas\Login\Views\Admin\Teacher.cshtml" />
     <Content Include="Areas\Login\Views\Admin\Student.cshtml" />
     <Content Include="Areas\Login\Views\Admin\Ajax.cshtml" />
+    <Content Include="Areas\Login\Views\Users\Create.cshtml" />
+    <Content Include="Areas\Login\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\Login\Views\Users\Details.cshtml" />
+    <Content Include="Areas\Login\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Login\Views\Users\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -262,14 +266,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202106121744298_createdb.resx">
-      <DependentUpon>202106121744298_createdb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106121807521_createdb1.resx">
-      <DependentUpon>202106121807521_createdb1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106121821566_createdb2.resx">
-      <DependentUpon>202106121821566_createdb2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106151731308_createdb.resx">
+      <DependentUpon>202106151731308_createdb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
