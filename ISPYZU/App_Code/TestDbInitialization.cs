@@ -32,8 +32,7 @@ namespace ISPYZU.App_Code
         new User {UserName="Shorif",  Password="123456", RoleId=2},
         new User {UserName="Siam",  Password="123456", RoleId=2},
         new User {UserName="Admin",  Password="123456", RoleId=2},
-
-
+       
       };
             users.ForEach(u => context.Users.Add(u));
             context.SaveChanges();
