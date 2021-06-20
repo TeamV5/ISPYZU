@@ -29,9 +29,9 @@
             <ul id="loading" style="display:none;color:black;">(it's loading by ajax)</ul>
 
             <div class="text-center">
+                <button class="btn-success">@Ajax.ActionLink("Student", "Ajax", "Admin", new { area = "Login", id = "StudentLogin" }, ajaxOptions, new { @class = "navbar-brand" })</button>
+                <button class="btn-default">@Ajax.ActionLink("Teacher", "Ajax", "Admin", new { area = "Login", id = "TeacherLogin" }, ajaxOptions, new { @class = "navbar-brand" })</button>
                 <button class="btn-danger"> @Ajax.ActionLink("Admin", "Ajax", "Admin", new { area = "Login", id = "Index" }, ajaxOptions, new { @class = "navbar-brand" }) </button>
-                <button class="btn-default">@Ajax.ActionLink("Teacher", "Ajax", "Admin", new { area = "Login", id = "Teacher" }, ajaxOptions, new { @class = "navbar-brand" })</button>
-                <button class="btn-success">@Ajax.ActionLink("Student", "Ajax", "Admin", new { area = "Login", id = "Student" }, ajaxOptions, new { @class = "navbar-brand" })</button>
             </div>
 
 

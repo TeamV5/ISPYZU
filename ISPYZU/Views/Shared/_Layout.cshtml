@@ -34,14 +34,26 @@
 
                     @if (Session["UserName"] != null)
                     {
-                     @Html.ActionLink("Admin", "UserDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
-                    <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
-                    
+                        @Html.ActionLink("Admin", "AdminDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
+                        <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
+
                     }
+                    else if (Session["StudentId"] != null)
+                    {
+                        @Html.ActionLink("Account", "StudentDashBoard", "Admin", new { area = "Login", id = "StudentDashBoard" }, null)
+                        <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
+
+                    }
+
                     else
                     {
                         <li>@Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "Ajax" }, null)</li>
                     }
+
+
+
+
+
 
                 </ul>
 

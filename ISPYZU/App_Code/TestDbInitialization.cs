@@ -32,11 +32,34 @@ namespace ISPYZU.App_Code
         new User {UserName="Shorif",  Password="123456", RoleId=2},
         new User {UserName="Siam",  Password="123456", RoleId=2},
         new User {UserName="Admin",  Password="123456", RoleId=2},
+        new User {UserName="admin",  Password="admin1234", RoleId=2},
 
 
       };
             users.ForEach(u => context.Users.Add(u));
             context.SaveChanges();
+
+
+            var Students = new List<Student>
+      {
+        new Student { StudentId ="1223", Name="MD_zahidul_Alam",Gender="Male",MajorId="1222",CollageId="1223",Session="2018",Password="zahid1234",Email="zahid@gmail.com" },
+        new Student { StudentId ="2334", Name="MD AL Rayhan",Gender="Male",MajorId="1222",CollageId="1223",Session="2018",Password="rayhan1234",Email="zahid@gmail.com" },
+
+
+      };
+            Students.ForEach(s => context.Students.Add(s));
+            context.SaveChanges();
+
+            var Teachers = new List<Teacher>
+      {
+        new Teacher { TeacherId ="3221", Name="XU ming",Gender="Male",CollageId="1223",Password="zahid1234",Email="asd@gmail.com" },
+        new Teacher { TeacherId ="3222", Name="Simon",Gender="Male",CollageId="1223",Password="rayhan1234",Email="cds@gmail.com" },
+
+
+      };
+            Teachers.ForEach(s => context.Teachers.Add(s));
+            context.SaveChanges();
+
 
             base.Seed(context);
     }

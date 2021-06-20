@@ -133,6 +133,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Login\Controllers\StudentsController.cs" />
+    <Compile Include="Areas\Login\Controllers\TeachersController.cs" />
     <Compile Include="Areas\Login\Controllers\UsersController.cs" />
     <Compile Include="Areas\Login\LoginAreaRegistration.cs" />
     <Compile Include="Areas\Login\Controllers\AdminController.cs" />
@@ -140,12 +142,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106151731308_createdb.cs" />
-    <Compile Include="Migrations\202106151731308_createdb.designer.cs">
-      <DependentUpon>202106151731308_createdb.cs</DependentUpon>
+    <Compile Include="Migrations\202106180946146_createdb.cs" />
+    <Compile Include="Migrations\202106180946146_createdb.designer.cs">
+      <DependentUpon>202106180946146_createdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106201625364_createdb1.cs" />
+    <Compile Include="Migrations\202106201625364_createdb1.designer.cs">
+      <DependentUpon>202106201625364_createdb1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\TestDbContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -208,13 +216,27 @@
     <Content Include="Areas\Login\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Login\Views\Shared\Admin_Layout.cshtml" />
     <Content Include="Areas\Login\Views\Admin\Teacher.cshtml" />
-    <Content Include="Areas\Login\Views\Admin\Student.cshtml" />
     <Content Include="Areas\Login\Views\Admin\Ajax.cshtml" />
     <Content Include="Areas\Login\Views\Users\Create.cshtml" />
     <Content Include="Areas\Login\Views\Users\Delete.cshtml" />
     <Content Include="Areas\Login\Views\Users\Details.cshtml" />
     <Content Include="Areas\Login\Views\Users\Edit.cshtml" />
     <Content Include="Areas\Login\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Login\Views\Admin\StudentDashBoard.cshtml" />
+    <Content Include="Areas\Login\Views\Admin\StudentLogin.cshtml" />
+    <Content Include="Areas\Login\Views\Students\Create.cshtml" />
+    <Content Include="Areas\Login\Views\Students\Delete.cshtml" />
+    <Content Include="Areas\Login\Views\Students\Details.cshtml" />
+    <Content Include="Areas\Login\Views\Students\Edit.cshtml" />
+    <Content Include="Areas\Login\Views\Students\Index.cshtml" />
+    <Content Include="Areas\Login\Views\Shared\Student_layout.cshtml" />
+    <Content Include="Areas\Login\Views\Teachers\Create.cshtml" />
+    <Content Include="Areas\Login\Views\Teachers\Delete.cshtml" />
+    <Content Include="Areas\Login\Views\Teachers\Details.cshtml" />
+    <Content Include="Areas\Login\Views\Teachers\Edit.cshtml" />
+    <Content Include="Areas\Login\Views\Teachers\Index.cshtml" />
+    <Content Include="Areas\Login\Views\Admin\TeacherLogin.cshtml" />
+    <Content Include="Areas\Login\Views\Admin\TeacherDashBoard.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -245,7 +267,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Areas\Login\Views\Admin\Index.cshtml" />
-    <Content Include="Areas\Login\Views\Admin\UserDashBoard.cshtml" />
+    <Content Include="Areas\Login\Views\Admin\AdminDashBoard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -266,8 +288,11 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202106151731308_createdb.resx">
-      <DependentUpon>202106151731308_createdb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106180946146_createdb.resx">
+      <DependentUpon>202106180946146_createdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106201625364_createdb1.resx">
+      <DependentUpon>202106201625364_createdb1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

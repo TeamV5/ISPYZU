@@ -33,7 +33,7 @@
 
                     @if (Session["UserName"] != null)
                     {
-                        @Html.ActionLink("Admin", "UserDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
+                        @Html.ActionLink("Admin", "AdminDashBoard", "Admin", new { area = "Login", id = "AdminDashBoard" }, null)
                         <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Admin") </h4>
                     }
                     else

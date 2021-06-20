@@ -1,0 +1,49 @@
+﻿@model ISPYZU.Models.Student
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+}
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+
+
+
+<h2> Student Login </h2>
+
+
+
+
+@using(Html.BeginForm("StudentLogin", "Admin", FormMethod.Post))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <div class="container">
+        <div class="form-group">
+            <label>STUDENT ID</label>
+            @*instead of this-Input type text <input></input>*@
+            @Html.ValidationMessageFor(x => x.StudentId, "", new { @class = "error" })
+            @Html.TextBoxFor(x => x.StudentId, new { @class = "form-control" })
+            
+           
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            @*instead of this-Input type text <input></input>*@
+            @Html.ValidationMessageFor(x => x.Password, "", new { @class = "error" })
+            @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+
+    </div>
+}
