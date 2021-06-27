@@ -18,6 +18,18 @@ namespace ISPYZU.Areas.Login.Controllers
                 return PartialView(id);
             else
                 return View(id);
+
+
+          /*if (id == null)
+            {
+                return View();
+            }
+            else
+            {
+                return View(id);
+            } */
+
+
         }
 
         
