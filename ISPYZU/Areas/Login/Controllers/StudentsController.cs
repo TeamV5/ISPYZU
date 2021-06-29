@@ -21,7 +21,7 @@ namespace ISPYZU.Areas.Login.Controllers
         }
 
         // GET: Login/Students/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(string id)
         {
             if (id == null)
             {
@@ -46,7 +46,7 @@ namespace ISPYZU.Areas.Login.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "SerialId,StudentId,Name,Gender,MajorId,CollageId,Session,Password,Email")] Student student)
+        public ActionResult Create([Bind(Include = "StudentId,Name,Gender,MajorId,CollageId,Session,Password,Email")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,7 @@ namespace ISPYZU.Areas.Login.Controllers
         }
 
         // GET: Login/Students/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(string id)
         {
             if (id == null)
             {
@@ -78,7 +78,7 @@ namespace ISPYZU.Areas.Login.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "SerialId,StudentId,Name,Gender,MajorId,CollageId,Session,Password,Email")] Student student)
+        public ActionResult Edit([Bind(Include = "StudentId,Name,Gender,MajorId,CollageId,Session,Password,Email")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace ISPYZU.Areas.Login.Controllers
         }
 
         // GET: Login/Students/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(string id)
         {
             if (id == null)
             {
@@ -107,7 +107,7 @@ namespace ISPYZU.Areas.Login.Controllers
         // POST: Login/Students/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(string id)
         {
             Student student = db.Students.Find(id);
             db.Students.Remove(student);

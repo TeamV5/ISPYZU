@@ -21,7 +21,7 @@ namespace ISPYZU.Areas.Login.Controllers
         }
 
         // GET: Login/Teachers/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(string id)
         {
             if (id == null)
             {
@@ -46,7 +46,7 @@ namespace ISPYZU.Areas.Login.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,TeacherId,Name,Gender,CollageId,Password,Email")] Teacher teacher)
+        public ActionResult Create([Bind(Include = "TeacherId,Name,Gender,CollageId,Password,Email")] Teacher teacher)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,7 @@ namespace ISPYZU.Areas.Login.Controllers
         }
 
         // GET: Login/Teachers/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(string id)
         {
             if (id == null)
             {
@@ -78,7 +78,7 @@ namespace ISPYZU.Areas.Login.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,TeacherId,Name,Gender,CollageId,Password,Email")] Teacher teacher)
+        public ActionResult Edit([Bind(Include = "TeacherId,Name,Gender,CollageId,Password,Email")] Teacher teacher)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace ISPYZU.Areas.Login.Controllers
         }
 
         // GET: Login/Teachers/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(string id)
         {
             if (id == null)
             {
@@ -107,7 +107,7 @@ namespace ISPYZU.Areas.Login.Controllers
         // POST: Login/Teachers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(string id)
         {
             Teacher teacher = db.Teachers.Find(id);
             db.Teachers.Remove(teacher);

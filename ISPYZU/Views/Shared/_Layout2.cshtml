@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    *@
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="~/Content/flaticon.css" rel="stylesheet" />
+    <link href="~/Content/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Content/lightbox.min.css" rel="stylesheet" />
+    <link href="~/Content/slick.css" rel="stylesheet" />
+    <link href="~/Content/slick-theme.css" rel="stylesheet" />
+    <link href="~/Content/stylelayout2.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo col-md-12">
+
+                            <h1>@Html.ActionLink("ISPYZU", "Index", "Home", new { area = "", id = "" }, null)</h1>
+                            <!-- <img src="img/logo.jpg" alt="Logo"> -->
+
+                        </div>
+                    </div>
+                    @*
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+
+                                        <div class="top-bar-text">
+                                            <h3>Mon - Fri, 8:00 - 9:00</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+
+                                        <div class="top-bar-text">
+                                            <h3>Call Us:000000</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+
+                                        <div class="top-bar-text">
+                                            <h3>info@example.com</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark navbar-fixed-top">
+                    <a href="#" class="navbar-brand navbar-right">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-item nav-link active" })
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Courses</a>
+                                <div class="dropdown-menu">
+
+                                    <a href="single.html" class="dropdown-item">Software Eng</a>
+                                    <a href="single.html" class="dropdown-item">Machanical Eng</a>
+                                </div>
+                            </div>
+                            @Html.ActionLink("Faculty", "Index", "Home", new { area = "", id = "" }, new { @class = "nav-item nav-link" })
+                            @Html.ActionLink("Campus life", "Index", "Home", new { area = "", id = "" }, new { @class = "nav-item nav-link" })
+                            @Html.ActionLink("About", "About", "Home", new { area = "", id = "" }, new { @class = "nav-item nav-link" })
+                            @Html.ActionLink("Contact", "Contact", "Home", new { area = "", id = "" }, new { @class = "nav-item nav-link" })
+
+
+
+
+
+                        </div>
+                        <div class="ml-auto">
+                            @if (Session["UserName"] != null)
+                            {
+                                @Html.ActionLink("Admin", "AdminDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
+                                <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
+
+                            }
+                            else if (Session["StudentId"] != null)
+                            {
+                                @Html.ActionLink("Account", "StudentDashBoard", "Admin", new { area = "Login", id = "StudentDashBoard" }, null)
+                                <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
+
+                            }
+
+                            else
+                            {
+                                @Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "Ajax" }, new { @class = "btn" })
+                            }
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        @*
+            <div class=" navbar navbar-inverse navbar-fixed-top">
+
+
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("ISPYZU", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                    </div>
+                    <div class="navbar-collapse collapse">
+
+
+
+                        <ul class="nav navbar-nav">
+
+
+
+                            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "", id = "" }, null)</li>
+                            <li>@Html.ActionLink("Courses", "Index", "Home", new { area = "", id = "" }, null)</li>
+                            <li>@Html.ActionLink("Faculty", "Index", "Home", new { area = "", id = "" }, null)</li>
+                            <li>@Html.ActionLink("Campus life", "Index", "Home", new { area = "", id = "" }, null)</li>
+                            <li>@Html.ActionLink("About", "About", "Home", new { area = "", id = "" }, null)</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "", id = "" }, null)</li>
+                        </ul>
+
+
+                        <ul class="nav navbar-nav navbar-right" style="color:white">
+
+                            @if (Session["UserName"] != null)
+                            {
+                                @Html.ActionLink("Admin", "AdminDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
+                                <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
+
+                            }
+                            else if (Session["StudentId"] != null)
+                            {
+                                @Html.ActionLink("Account", "StudentDashBoard", "Admin", new { area = "Login", id = "StudentDashBoard" }, null)
+                                <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Home") </h4>
+
+                            }
+
+                            else
+                            {
+                                <li>@Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "Ajax" }, null)</li>
+                            }
+
+
+
+
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+        *@
+        <div class="container body-content">
+            <div class="col-md-12">
+
+                @RenderBody()
+            </div>
+
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+    </div>
+
+    @* @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+      <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+        <script src="~/Scripts/jquery.validate.js"></script>
+        <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+   
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />*@
+
+
+   
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="~/Scripts/easing.min.js"></script>
+        <script src="~/Scripts/wow.min.js"></script>
+        <script src="~/Scripts/owl.carousel.min.js"></script>
+        <script src="~/Scripts/isotope.pkgd.min.js"></script>
+        <script src="~/Scripts/lightbox.min.js"></script>
+        <script src="~/Scripts/waypoints.min.js"></script>
+        <script src="~/Scripts/counterup.min.js"></script>
+        <script src="~/Scripts/slick.min.js"></script>
+        <script src="~/Scripts/layoutmain.js"></script>
+ 
+
+</body>
+</html>

@@ -35,7 +35,7 @@
                     @if(Session["UserName"] != null)
                     {
                         <h4 style="color:white">Hello  @Session["UserName"]</h4>
-                        @Html.ActionLink("Logout", "Logout", "Admin")
+                        @Html.ActionLink("Logout", "Logout", "Admin" )
                     }
                         else
                         {

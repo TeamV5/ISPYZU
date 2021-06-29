@@ -9,11 +9,12 @@ using System.Web;
 namespace ISPYZU.Models
 {
     public class Teacher
-    {
+    { /*
         [Required]
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { set; get; }
-
+        */
+        [Key]
         [Required]
         [Display(Name = "Teacher Id-")]
         [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]

@@ -27,7 +27,7 @@
                     <li> @Html.ActionLink("View Courses", "Details", "Students", new { area = "Login" }, new { @class = "navbar-brand" })</li>
                    
                  
-                        <li> @Html.ActionLink("My Account", "Details", "Students", new { area = "Login", id="1" }, new { @class = "navbar -brand" })</li>
+                        <li> @Html.ActionLink("My Account", "Details", "Students", new { area = "Login", id="1223" }, new { @class = "navbar -brand" })</li>
 
 
                         <li> @Html.ActionLink("Notification", "Details", "Students", new { area = "Login" }, new { @class = "navbar-brand" })</li>
@@ -38,7 +38,7 @@
                     @if (Session["StudentId"] != null)
                     {
                         <h4 style="color:white">Hello  @Session["StudentId"]</h4>
-                        @Html.ActionLink("Logout", "Logout", "Admin")
+                        @Html.ActionLink("Logout", "Logout", "Admin" )
                     }
                     else
                     {

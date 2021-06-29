@@ -150,20 +150,50 @@
     <Compile Include="Migrations\202106201625364_createdb1.designer.cs">
       <DependentUpon>202106201625364_createdb1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106291804291_createdb2.cs" />
+    <Compile Include="Migrations\202106291804291_createdb2.designer.cs">
+      <DependentUpon>202106291804291_createdb2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106291831182_createdb3.cs" />
+    <Compile Include="Migrations\202106291831182_createdb3.designer.cs">
+      <DependentUpon>202106291831182_createdb3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106291923344_createdb4.cs" />
+    <Compile Include="Migrations\202106291923344_createdb4.designer.cs">
+      <DependentUpon>202106291923344_createdb4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106292016461_createdb5.cs" />
+    <Compile Include="Migrations\202106292016461_createdb5.designer.cs">
+      <DependentUpon>202106292016461_createdb5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Colleges.cs" />
+    <Compile Include="Models\CourseEnrolled.cs" />
+    <Compile Include="Models\Courses.cs" />
+    <Compile Include="Models\Genders.cs" />
+    <Compile Include="Models\Majors.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\RunningCourses.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\TestDbContext.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\validators\ValidationStrings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App_Code\TestDbInitialization.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animate.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\flaticon.css" />
+    <Content Include="Content\lightbox.min.css" />
+    <Content Include="Content\owl.carousel.min.css" />
+    <Content Include="Content\slick-theme.css" />
+    <Content Include="Content\slick.css" />
+    <Content Include="Content\stylelayout2.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -224,20 +254,23 @@
     <Content Include="Areas\Login\Views\Users\Index.cshtml" />
     <Content Include="Areas\Login\Views\Admin\StudentDashBoard.cshtml" />
     <Content Include="Areas\Login\Views\Admin\StudentLogin.cshtml" />
+    <Content Include="Areas\Login\Views\Shared\Student_layout.cshtml" />
+    <Content Include="Areas\Login\Views\Admin\TeacherLogin.cshtml" />
+    <Content Include="Areas\Login\Views\Admin\TeacherDashBoard.cshtml" />
     <Content Include="Areas\Login\Views\Students\Create.cshtml" />
     <Content Include="Areas\Login\Views\Students\Delete.cshtml" />
     <Content Include="Areas\Login\Views\Students\Details.cshtml" />
     <Content Include="Areas\Login\Views\Students\Edit.cshtml" />
     <Content Include="Areas\Login\Views\Students\Index.cshtml" />
-    <Content Include="Areas\Login\Views\Shared\Student_layout.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Create.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Delete.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Details.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Edit.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Index.cshtml" />
-    <Content Include="Areas\Login\Views\Admin\TeacherLogin.cshtml" />
-    <Content Include="Areas\Login\Views\Admin\TeacherDashBoard.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\counterup.min.js" />
+    <Content Include="Scripts\easing.min.js" />
+    <Content Include="Scripts\isotope.pkgd.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -251,7 +284,13 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightbox.min.js" />
+    <Content Include="Scripts\layoutmain.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\slick.min.js" />
+    <Content Include="Scripts\waypoints.min.js" />
+    <Content Include="Scripts\wow.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -268,6 +307,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Areas\Login\Views\Admin\Index.cshtml" />
     <Content Include="Areas\Login\Views\Admin\AdminDashBoard.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -293,6 +333,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106201625364_createdb1.resx">
       <DependentUpon>202106201625364_createdb1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106291804291_createdb2.resx">
+      <DependentUpon>202106291804291_createdb2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106291831182_createdb3.resx">
+      <DependentUpon>202106291831182_createdb3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106291923344_createdb4.resx">
+      <DependentUpon>202106291923344_createdb4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106292016461_createdb5.resx">
+      <DependentUpon>202106292016461_createdb5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

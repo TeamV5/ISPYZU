@@ -42,9 +42,9 @@ namespace ISPYZU.App_Code
 
             var Students = new List<Student>
       {
-        new Student { StudentId ="1223", Name="MD_zahidul_Alam",Gender="Male",MajorId="1222",CollageId="1223",Session="2018",Password="zahid1234",Email="zahid@gmail.com" },
-        new Student { StudentId ="2334", Name="MD AL Rayhan",Gender="Male",MajorId="1222",CollageId="1223",Session="2018",Password="rayhan1234",Email="zahid@gmail.com" },
-
+        new Student {StudentId="4557", Name="MD_zahidul_Alam",Gender="Male",MajorId="1222",CollageId="1223",Session="2018",Password="zahid1234",Email="zahid@gmail.com" },
+        new Student { StudentId ="6745", Name="MD AL Rayhan",Gender="Male",MajorId="1222",CollageId="1223",Session="2018",Password="rayhan1234",Email="zahid@gmail.com" },
+         new Student {StudentId="1223", Name="Rohim",Gender="Male",MajorId="1222",CollageId="1223",Session="2018",Password="zahid1234",Email="zahid@gmail.com" },
 
       };
             Students.ForEach(s => context.Students.Add(s));
