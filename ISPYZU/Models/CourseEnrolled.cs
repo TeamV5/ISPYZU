@@ -10,31 +10,41 @@ namespace ISPYZU.Models
     public class CourseEnrolled
     {
         [Required]
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         [Display(Name = "CE Id-")]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+        [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+        [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string CEId { get; set; }
 
         [Required]
         [Display(Name = "Student ID-")]
-        //  [ForeignKey(nameof(student))]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+      //  [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+     //   [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string StudentId { get; set; }
 
         [Required]
-        [Display(Name = "course Name-")]
+        [Display(Name = "course ID")]
         //  [ForeignKey(nameof(course))]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
-        public string CourseName { get; set; }
+       // [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+       // [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
+        public string CourseId { get; set; }
 
         [Required]
         [Display(Name = "Teacher ID-")]
         //  [ForeignKey(nameof(course))]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+       // [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+      //  [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string TeacherId { get; set; }
+
+
+
+        [ForeignKey(nameof(StudentId))]
+        public virtual Student Student { get; set; }
+
+        [ForeignKey(nameof(TeacherId))]
+        public virtual Teacher Teacher { get; set; }
+
+        [ForeignKey(nameof(CourseId))]
+        public virtual Courses Courses { get; set; }
     }
 }

@@ -17,7 +17,8 @@ namespace ISPYZU.Areas.Login.Controllers
         // GET: Login/Teachers
         public ActionResult Index()
         {
-            return View(db.Teachers.ToList());
+            var teachers = db.Teachers.Include(t => t.Colleges);
+            return View(teachers.ToList());
         }
 
         // GET: Login/Teachers/Details/5
@@ -38,6 +39,7 @@ namespace ISPYZU.Areas.Login.Controllers
         // GET: Login/Teachers/Create
         public ActionResult Create()
         {
+            ViewBag.CollageId = new SelectList(db.Colleges, "CollegeId", "CollegeName");
             return View();
         }
 
@@ -55,6 +57,7 @@ namespace ISPYZU.Areas.Login.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.CollageId = new SelectList(db.Colleges, "CollegeId", "CollegeName", teacher.CollageId);
             return View(teacher);
         }
 
@@ -70,6 +73,7 @@ namespace ISPYZU.Areas.Login.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.CollageId = new SelectList(db.Colleges, "CollegeId", "CollegeName", teacher.CollageId);
             return View(teacher);
         }
 
@@ -86,6 +90,7 @@ namespace ISPYZU.Areas.Login.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.CollageId = new SelectList(db.Colleges, "CollegeId", "CollegeName", teacher.CollageId);
             return View(teacher);
         }
 

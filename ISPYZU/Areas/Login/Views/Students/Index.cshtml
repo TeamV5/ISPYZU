@@ -12,16 +12,20 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Colleges.CollegeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Majors.MajorName)
+        </th>
+
+        <th>
             @Html.DisplayNameFor(model => model.Gender)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MajorId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CollageId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Session)
@@ -38,16 +42,20 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.StudentId)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Colleges.CollegeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Majors.MajorName)
+        </td>
+
+        <td>
             @Html.DisplayFor(modelItem => item.Gender)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MajorId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CollageId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Session)
@@ -59,9 +67,9 @@
             @Html.DisplayFor(modelItem => item.Email)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StudentId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.StudentId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.StudentId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })
         </td>
     </tr>
 }

@@ -11,13 +11,13 @@ namespace ISPYZU.Models
     public class Genders
     {
         [Key]
-        [DisplayName("Gender no")]
-        public byte GenderNo { get; set; }
+        [Required]
+        public string Gender { set; get; }
 
         [DisplayName("gender")]
         [Required]
-        [MaxLength(1)]
-        [Index("IX_Gender_GenderName", IsUnique = true)]
+        [MaxLength(15)]
+       // [Index("IX_Gender_GenderName", IsUnique = true)]
         public string GenderName { get; set; }
 
  

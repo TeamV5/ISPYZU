@@ -10,6 +10,22 @@
     <h4>Teacher</h4>
     <hr />
     <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Colleges.CollegeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colleges.CollegeName)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
@@ -24,14 +40,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.Gender)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CollageId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CollageId)
         </dd>
 
         <dt>

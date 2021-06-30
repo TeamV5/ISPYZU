@@ -10,24 +10,27 @@ namespace ISPYZU.Models
     public class Courses
     {
         [Required]
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         [Display(Name = "Course Id-")]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+        [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+        [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string CourseId { get; set; }
 
         [Required]
         [Display(Name = "Course Name-")]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+        [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+        [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string CourseName { get; set; }
 
         [Required]
-        [Display(Name = "Major Name-")]
-        //  [ForeignKey(nameof(major))]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
-        public string MajorName { get; set; }
+        [Display(Name = " Major Id-")]
+      //  [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+     //   [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+        [ForeignKey("Majors")]
+        public string MajorId { get; set; }
+
+
+        public virtual Majors Majors { get; set; }
 
 
     }

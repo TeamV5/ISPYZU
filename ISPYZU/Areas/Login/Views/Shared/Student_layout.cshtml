@@ -1,4 +1,4 @@
-﻿@model ISPYZU.Models.Student
+﻿@model IEnumerable<ISPYZU.Models.Student>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,11 +23,14 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>
                 <ul class="nav navbar-nav">
-                    
+
                     <li> @Html.ActionLink("View Courses", "Details", "Students", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+
+                    @* var item = @Model*@
                    
-                 
-                        <li> @Html.ActionLink("My Account", "Details", "Students", new { area = "Login", id="1223" }, new { @class = "navbar -brand" })</li>
+                  
+                        <li> @Html.ActionLink("My Account", "Details", "Students", new { area = "Login", id =Session["StudentId"] }, new { @class = "navbar -brand" })</li>
+                   
 
 
                         <li> @Html.ActionLink("Notification", "Details", "Students", new { area = "Login" }, new { @class = "navbar-brand" })</li>
@@ -38,7 +41,7 @@
                     @if (Session["StudentId"] != null)
                     {
                         <h4 style="color:white">Hello  @Session["StudentId"]</h4>
-                        @Html.ActionLink("Logout", "Logout", "Admin" )
+                        @Html.ActionLink("Logout", "Logout", "Admin")
                     }
                     else
                     {

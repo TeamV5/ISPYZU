@@ -16,7 +16,7 @@ namespace ISPYZU.Models
         */
         [Key]
         [Required]
-        [Display(Name = "Teacher Id-")]
+        [Display(Name = "Teacher Id ")]
         [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
         [MaxLength(4, ErrorMessage = "{0}cant't be more than{1}")]
         public string TeacherId { get; set; }
@@ -29,13 +29,12 @@ namespace ISPYZU.Models
 
         [Required]
         [DisplayName("Gender")]
-        // [ForeignKey(nameof(Gender))]
         public string Gender { get; set; }
 
         [DisplayName("College_ID")]
         [Required]
-        // [ForeignKey(nameof(College))]
-        [MaxLength(12, ErrorMessage = "{0}cant't be more than{1}")]
+      //  [MaxLength(12, ErrorMessage = "{0}cant't be more than{1}")]
+        [ForeignKey("Colleges")]
         public string CollageId { get; set; }
 
         
@@ -51,5 +50,10 @@ namespace ISPYZU.Models
                 [DisplayName("Upload Picture")]
                 public byte[] Picture { get; set; }
            */
+
+        public virtual Colleges Colleges { get; set; }
+
+        //  [ForeignKey(nameof(Gender))]
+       // public virtual Genders Genders { get; set; }
     }
 }

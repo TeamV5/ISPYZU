@@ -11,24 +11,30 @@ namespace ISPYZU.Models
     {
 
         [Required]
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         [Display(Name = "RC Id-")]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+        [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+        [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string RCId { get; set; }
 
         [Required]
-        [Display(Name = "Course Name-")]
-        //  [ForeignKey(nameof(course))]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
-        public string CourseName { get; set; }
+        [Display(Name = "Course Id")]
+        //[MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+       // [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
+       // [ForeignKey("Courses")]
+        public string CourseId { get; set; }
 
         [Required]
-        [Display(Name = "teacher Name-")]
-        //  [ForeignKey(nameof(teacher))]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
-        public string TeacherName { get; set; }
+        [Display(Name = "teacher ID-")]
+     //   [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+      //  [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
+        //[ForeignKey("Teacher")]
+        public string TeacherId { get; set; }
+
+        [ForeignKey(nameof(CourseId))]
+        public virtual Courses Courses { get; set; }
+
+        [ForeignKey(nameof(TeacherId))]
+        public virtual Teacher Teacher { get; set; }
     }
 }

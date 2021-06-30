@@ -138,33 +138,15 @@
     <Compile Include="Areas\Login\Controllers\UsersController.cs" />
     <Compile Include="Areas\Login\LoginAreaRegistration.cs" />
     <Compile Include="Areas\Login\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Remote\Controllers\StudentsController.cs" />
+    <Compile Include="Areas\Remote\RemoteAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106180946146_createdb.cs" />
-    <Compile Include="Migrations\202106180946146_createdb.designer.cs">
-      <DependentUpon>202106180946146_createdb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106201625364_createdb1.cs" />
-    <Compile Include="Migrations\202106201625364_createdb1.designer.cs">
-      <DependentUpon>202106201625364_createdb1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106291804291_createdb2.cs" />
-    <Compile Include="Migrations\202106291804291_createdb2.designer.cs">
-      <DependentUpon>202106291804291_createdb2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106291831182_createdb3.cs" />
-    <Compile Include="Migrations\202106291831182_createdb3.designer.cs">
-      <DependentUpon>202106291831182_createdb3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106291923344_createdb4.cs" />
-    <Compile Include="Migrations\202106291923344_createdb4.designer.cs">
-      <DependentUpon>202106291923344_createdb4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106292016461_createdb5.cs" />
-    <Compile Include="Migrations\202106292016461_createdb5.designer.cs">
-      <DependentUpon>202106292016461_createdb5.cs</DependentUpon>
+    <Compile Include="Migrations\202106301911584_createdb.cs" />
+    <Compile Include="Migrations\202106301911584_createdb.designer.cs">
+      <DependentUpon>202106301911584_createdb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Colleges.cs" />
@@ -267,6 +249,7 @@
     <Content Include="Areas\Login\Views\Teachers\Details.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Edit.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Index.cshtml" />
+    <Content Include="Areas\Remote\Views\web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\counterup.min.js" />
     <Content Include="Scripts\easing.min.js" />
@@ -312,6 +295,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Login\Models\" />
+    <Folder Include="Areas\Remote\Models\" />
+    <Folder Include="Areas\Remote\Views\Shared\" />
+    <Folder Include="Areas\Remote\Views\Students\" />
     <Folder Include="cache\" />
   </ItemGroup>
   <ItemGroup>
@@ -328,23 +314,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202106180946146_createdb.resx">
-      <DependentUpon>202106180946146_createdb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106201625364_createdb1.resx">
-      <DependentUpon>202106201625364_createdb1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106291804291_createdb2.resx">
-      <DependentUpon>202106291804291_createdb2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106291831182_createdb3.resx">
-      <DependentUpon>202106291831182_createdb3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106291923344_createdb4.resx">
-      <DependentUpon>202106291923344_createdb4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106292016461_createdb5.resx">
-      <DependentUpon>202106292016461_createdb5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106301911584_createdb.resx">
+      <DependentUpon>202106301911584_createdb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

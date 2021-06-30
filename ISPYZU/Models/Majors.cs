@@ -13,21 +13,32 @@ namespace ISPYZU.Models
         [Required]
         [Key]
         [Display(Name = "Major Id-")]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+        [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+        [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string MajorId { get; set; }
 
         [Required]
         [Display(Name = "Major Name-")]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
+        [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+        [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
         public string MajorName { get; set; }
 
         [Required]
-      //  [ForeignKey(nameof(College))]
-        [Display(Name = "College Name-")]
-        [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
-        [MaxLength(10, ErrorMessage = "{0}cant't be more than{1}")]
-        public string CollegeName { get; set; }
+        
+        [Display(Name = "College ID")]
+        [MinLength(1, ErrorMessage = "{0} cant't be less than {1}")]
+        [MaxLength(50, ErrorMessage = "{0}cant't be more than{1}")]
+       // [ForeignKey("Colleges")]
+        public string CollegeId { get; set; }
+
+
+        [ForeignKey(nameof(CollegeId))]
+        public virtual Colleges Colleges { get; set; }
+
+
+
+
+
+
     }
 }

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using ISPYZU.Models.validators;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace ISPYZU.Models
 {
@@ -20,6 +22,7 @@ namespace ISPYZU.Models
         [Display(Name = "Student Id-")]
         [MinLength(4, ErrorMessage = "{0} cant't be less than {1}")]
         [MaxLength(4, ErrorMessage = "{0}cant't be more than{1}")]
+        [Remote("CheckID", "Students", ValidationStrings.RemoteArea, ErrorMessage = ValidationStrings.UniqueErrMsg)]
         public string StudentId { get; set; }
 
 
@@ -29,20 +32,20 @@ namespace ISPYZU.Models
         public string Name { get; set; }
 
         [Required]
-        [DisplayName("Gender")]
-       // [ForeignKey("Genders")]
+        [DisplayName("Gender")] 
         public string Gender { get; set; }
+
 
         [DisplayName("Major_ID")]
         [Required]
-        [MaxLength(12, ErrorMessage = "{0}cant't be more than{1}")]
-        //[ForeignKey("Majors")]
+       // [MaxLength(12, ErrorMessage = "{0}cant't be more than{1}")]
+        [ForeignKey("Majors")]
         public string MajorId { get; set; }
 
         [DisplayName("College_ID")]
         [Required]
-      //  [ForeignKey("Colleges")]  // look at the down below public virtual colleges it comes from there 
-        [MaxLength(12, ErrorMessage = "{0}cant't be more than{1}")]
+        [ForeignKey("Colleges")]  // look at the down below public virtual colleges it comes from there 
+       // [MaxLength(12, ErrorMessage = "{0}cant't be more than{1}")]
         public string CollageId { get; set; }
 
         [DisplayName("Session year")]
@@ -63,9 +66,14 @@ namespace ISPYZU.Models
    */
 
 
-            // these are for the foriegn key in the  collegeId,gender
-    //    public virtual Colleges Colleges { get; set; }
-    //    public virtual Genders Genders { get; set; }
-     //   public virtual Majors Majors { get; set; }
+            // these are for the foriegn key in the  collegeId,gender,majors
+        public virtual Colleges Colleges { get; set; }
+
+
+       // [ForeignKey(nameof(Gender))]
+       // public virtual Genders Genders { get; set; }
+
+
+        public virtual Majors Majors { get; set; }
     }
 }
