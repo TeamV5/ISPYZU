@@ -1,0 +1,175 @@
+﻿@model ISPYZU.Models.User
+@{
+    Layout = "~/Areas/Login/Views/Shared/Admin_Layout.cshtml";
+}
+
+@{
+    /**/
+
+    ViewBag.Title = "UserDashBoard";
+
+}
+
+
+
+<style type="text/css">
+
+   
+
+    /*
+
+
+    b {
+        color: red;
+    }
+
+    .red {
+        color: red;
+        font-weight: bold;
+    }
+
+    body {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .leftMenu {
+        margin-right: -15px;
+        padding-bottom: 0;
+    }
+
+        .leftMenu :first-child {
+            margin-top: 0;
+        }
+
+        .leftMenu .list-group {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        .leftMenu .list-group-item {
+            font-size: 14px;
+            margin-left: -34px;
+            margin-right: -34px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+            .leftMenu .list-group-item:first-child {
+                margin-top: -15px;
+            }
+
+            .leftMenu .list-group-item:last-child {
+                margin-bottom: -15px;
+            }
+
+            .leftMenu .list-group-item:hover {
+                background-color: #fbe77a;
+                color: red;
+            }
+
+            .leftMenu .list-group-item:focus {
+                color: red;
+            }
+            */
+</style>
+
+
+
+
+
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/modernizr-2.8.3.js"></script>
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+
+<h2 class="text-center">Admin panel</h2>
+
+@{
+    var ajaxOptions = new AjaxOptions
+
+    {
+        LoadingElementId = "loading",
+        UpdateTargetId = "mainWindow",
+        OnFailure = "OnFailure",
+
+    };
+}
+
+
+
+
+
+    <ul id="loading" class="nav navbar-text navbar-right" style="display:none;color:black;">(it's loading by ajax)</ul>
+
+
+    <div class="container body-content">
+
+
+        <div class="col-md-3">
+            @*  <div class="leftMenu panel panel-success">*@
+            <h3 class="btn-success">Board</h3>
+            <div class="list-group">
+
+                @Ajax.ActionLink("Courses", "Index", "Courses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "list-group-item" })
+                @Ajax.ActionLink("Colleges", "Index", "Colleges", new { area = "Login", id = "" }, ajaxOptions, new { @class = "list-group-item" })
+                @Ajax.ActionLink("Majors", "Index", "Majors", new { area = "Login", id = "" }, ajaxOptions, new { @class = "list-group-item" })
+                @Ajax.ActionLink("Running Courses", "Index", "RunningCourses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "list-group-item" })
+                @Ajax.ActionLink("Enrolled Courses", "Index", " CourseEnrolleds", new { area = "Login", id = "" }, ajaxOptions, new { @class = "list-group-item" })
+
+                @*</div>*@
+            </div>
+
+
+                </div>
+
+
+                <div class="col-md-9">
+                    <div id="mainWindow" style="border:1px solid lightblue; margin-top:10px;padding:10px;overflow-y:auto;overflow-x:hidden;">
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+        </div>
+
+
+
+
+                <script>/*
+                    //jquery function
+                    // or we can use it same-- $(document).ready(function){...... }
+                    $(function () {
+                        let menu = $(".leftMenu");//select class = leftmenu elements
+                        //call jquery function .accordion
+                        // This accordion makes the dropdown menu
+                        menu.accordion({ heightStyle: "content", collapsible: true });
+                        $("#mainWindow").css({ minHeight: menu.height })
+
+
+                    });
+                    function OnFailure(xhr) {
+                        $("body").html(xhr.responseText);
+                    }
+
+
+
+                </script>
+
+
+
+
+
+
+
