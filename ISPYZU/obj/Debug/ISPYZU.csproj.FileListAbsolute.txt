@@ -257,9 +257,6 @@ C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\IS
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\git\GIThub\ISPYZU\ISPYZU\obj\Debug\ISPYZU.pdb
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb.resources
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.csproj.GenerateResource.cache
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb1.resources
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb2.resources
-C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored with the 1st step\ISPYZU\ISPYZU\obj\Debug\ISPYZU.Migrations.createdb3.resources
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\ISPYZU.dll.config
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\ISPYZU.dll
 C:\Users\zahid\Desktop\clean\YZUASPPROJECT\newYZU\safe STored\ISPYZU\ISPYZU\bin\ISPYZU.pdb

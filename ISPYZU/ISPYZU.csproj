@@ -133,6 +133,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Login\Controllers\CollegesController.cs" />
     <Compile Include="Areas\Login\Controllers\StudentsController.cs" />
     <Compile Include="Areas\Login\Controllers\TeachersController.cs" />
     <Compile Include="Areas\Login\Controllers\UsersController.cs" />
@@ -250,6 +251,11 @@
     <Content Include="Areas\Login\Views\Teachers\Edit.cshtml" />
     <Content Include="Areas\Login\Views\Teachers\Index.cshtml" />
     <Content Include="Areas\Remote\Views\web.config" />
+    <Content Include="Areas\Login\Views\Colleges\Create.cshtml" />
+    <Content Include="Areas\Login\Views\Colleges\Delete.cshtml" />
+    <Content Include="Areas\Login\Views\Colleges\Details.cshtml" />
+    <Content Include="Areas\Login\Views\Colleges\Edit.cshtml" />
+    <Content Include="Areas\Login\Views\Colleges\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\counterup.min.js" />
     <Content Include="Scripts\easing.min.js" />
