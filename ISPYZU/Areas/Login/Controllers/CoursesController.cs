@@ -15,7 +15,6 @@ namespace ISPYZU.Areas.Login.Controllers
         private TestDbContext db = new TestDbContext();
 
 
-
         // GET: Login/Courses
         public ActionResult Index()
         {

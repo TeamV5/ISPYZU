@@ -1,11 +1,90 @@
-﻿@{
-    Layout = "~/Areas/Login/Views/Shared/Student_layout.cshtml";
-}
-
+﻿
 
 @{
     ViewBag.Title = "StudentDashBoard";
 }
 
-<h2>StudentDashBoard</h2>
+<h2 class="text-center">StudentDashBoard</h2>
 
+@* settings for ajax*@
+@{
+    var ajaxOptions = new AjaxOptions
+
+    {
+        LoadingElementId = "loading",
+        UpdateTargetId = "mainWindow",
+        OnFailure = "OnFailure",
+
+    };
+}
+
+<h2 class="text-center">Students Portal</h2>
+<div class="text-center">
+
+</div>
+</br>
+
+<div class="container body-content">
+    <div class="col-md-12">
+        <div class="list-group-item-success">
+            <ul id="loading" style="display:none;color:black;">(it's loading by ajax)</ul>
+
+            <div class="text-center">
+                
+                <button>@Ajax.ActionLink("Courses", "Index", "Courses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
+                <button>@Ajax.ActionLink("Available Courses", "Index", "RunningCourses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
+                <button>@Ajax.ActionLink("Colleges", "Index", "Colleges", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
+                <button> @Ajax.ActionLink("Majors", "Index", "Majors", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" }) </button>
+               
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-12" style="border:0px solid lightblue; margin-top:10px;padding:10px;overflow-y:auto;overflow-x:hidden" ;>
+        <div id="mainWindow">
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    function OnFailure(xhr) {
+        $("body").html(xhr.responseText);
+    }
+</script>
+@*
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+
+
+
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+
+*@
+
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>

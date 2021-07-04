@@ -61,6 +61,10 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TeacherId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TeacherId })
+    @if (Session["UserName"] != null)
+    {
+        @Html.ActionLink("Back to List", "Index")
+    }
+
 </p>

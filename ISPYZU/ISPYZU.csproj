@@ -281,6 +281,8 @@
     <Content Include="Areas\Login\Views\CourseEnrolleds\Details.cshtml" />
     <Content Include="Areas\Login\Views\CourseEnrolleds\Edit.cshtml" />
     <Content Include="Areas\Login\Views\CourseEnrolleds\Index.cshtml" />
+    <Content Include="Areas\Login\Views\Shared\Teacher_layout.cshtml" />
+    <Content Include="Areas\Login\Views\Shared\_Layout2.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\counterup.min.js" />
     <Content Include="Scripts\easing.min.js" />

@@ -21,13 +21,33 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>
-                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav">
+                    @if (Session["UserName"] != null)
+                    {
+                        <li> @Html.ActionLink("Manage Admin", "Index", "Users", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                        <li> @Html.ActionLink("Manage Student", "Index", "Students", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                        <li> @Html.ActionLink("Manage Teacher", "Index", "Teachers", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                    }
+                    else if (Session["StudentId"] != null)
+                    {
+
+                        <li> @Html.ActionLink("My Account", "Details", "Students", new { area = "Login", id = Session["StudentId"] }, new { @class = "navbar-brand" })</li>
+
+                        <li> @Html.ActionLink("Notification", "StudentDashBoard", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                    }
+
+                    else if (Session["TeacherId"] != null)
+                    {
+
+                        <li> @Html.ActionLink("My Account", "Details", "Teachers", new { area = "Login", id = Session["TeacherId"] }, new { @class = "navbar-brand" })</li>
+
+                        <li> @Html.ActionLink("Notification", "TeacherDashBoard", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                    }
+
+
+                </ul>
 
                 <ul class="nav navbar-nav navbar-right" style="color:white">
-
-
-
-
 
                     @if (Session["UserName"] != null)
                     {

@@ -80,6 +80,10 @@
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+    <div>
+        @if (Session["UserName"] != null || Session["TeacherID"] != null)
+        {
+
+            @Html.ActionLink("Back to List", "Index")
+        }
+    </div>

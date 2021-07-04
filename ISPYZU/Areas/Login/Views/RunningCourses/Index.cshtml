@@ -3,13 +3,23 @@
 @{
     ViewBag.Title = "Index";
 }
+@if (Session["TeacherId"] != null)
+{
+    <h2 class="text-center"> Add Running Courses</h2>
+}
+else
+{
+    <h2 class="text-center">Running Courses</h2>
+}
 
-<h2 class="text-center">Running Courses</h2>
 
+@if (Session["UserName"] != null || Session["TeacherID"] != null)
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -26,21 +36,24 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.RCId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Courses.CourseName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Teacher.Name)
-            </td>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RCId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Courses.CourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teacher.Name)
+        </td>
+        @if (Session["UserName"] != null || Session["TeacherID"] != null)
+        {
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.RCId }) |
                 @Html.ActionLink("Details", "Details", new { id = item.RCId }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.RCId })
             </td>
+        }
         </tr>
     }
 

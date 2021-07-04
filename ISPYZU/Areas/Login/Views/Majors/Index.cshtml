@@ -7,9 +7,12 @@
 <h2 class="text-center">Majors</h2>
 
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+@if (Session["UserName"] != null)
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
 <table class="table">
     <tr>
         <th>
@@ -26,21 +29,24 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.MajorId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Colleges.CollegeName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MajorName)
-            </td>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MajorId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Colleges.CollegeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MajorName)
+        </td>
+        @if (Session["UserName"] != null)
+        {
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.MajorId }) |
                 @Html.ActionLink("Details", "Details", new { id = item.MajorId }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.MajorId })
             </td>
+        }
         </tr>
     }
 

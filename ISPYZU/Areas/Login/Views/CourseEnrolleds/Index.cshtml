@@ -7,9 +7,12 @@
 <h2 class="text-center">Course Enrolled</h2>
 
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+@if (Session["UserName"] != null)
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
 <table class="table">
     <tr>
         <th>
@@ -22,31 +25,34 @@
             @Html.DisplayNameFor(model => model.Student.Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Teacher.Name)
+            Teacher @Html.DisplayNameFor(model => model.Teacher.Name)
         </th>
         <th></th>
     </tr>
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CEId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Courses.CourseName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Student.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Teacher.Name)
-            </td>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CEId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Courses.CourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teacher.Name)
+        </td>
+        @if (Session["UserName"] != null)
+        {
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.CEId }) |
                 @Html.ActionLink("Details", "Details", new { id = item.CEId }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.CEId })
             </td>
+        }
         </tr>
     }
 

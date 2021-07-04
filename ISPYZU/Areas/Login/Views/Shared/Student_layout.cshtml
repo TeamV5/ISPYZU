@@ -24,14 +24,7 @@
                 <ul class="nav navbar-nav navbar-right"></ul>
                 <ul class="nav navbar-nav">
 
-                    <li> @Html.ActionLink("View Courses", "Details", "Students", new { area = "Login" }, new { @class = "navbar-brand" })</li>
-
-                    @* var item = @Model*@
-                   
-                  
                         <li> @Html.ActionLink("My Account", "Details", "Students", new { area = "Login", id =Session["StudentId"] }, new { @class = "navbar -brand" })</li>
-                   
-
 
                         <li> @Html.ActionLink("Notification", "Details", "Students", new { area = "Login" }, new { @class = "navbar-brand" })</li>
                     </ul>

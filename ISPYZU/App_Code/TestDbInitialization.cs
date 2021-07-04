@@ -104,7 +104,7 @@ namespace ISPYZU.App_Code
             var Teachers = new List<Teacher>
       {
         new Teacher { TeacherId ="5000", Name="XU ming",Gender="Male",CollageId="1000",Password="zahid1234",Email="asd@gmail.com" },
-        new Teacher { TeacherId ="3222", Name="Simon",Gender="Male",CollageId="1001",Password="zahid1234",Email="cds@gmail.com" },
+        new Teacher { TeacherId ="5001", Name="Simon",Gender="Male",CollageId="1001",Password="zahid1234",Email="cds@gmail.com" },
 
 
       };

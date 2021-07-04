@@ -25,7 +25,7 @@
     @Html.ValidationSummary(true)
     <div class="container">
         <div class="form-group">
-            <label>STUDENT ID</label>
+            <label>Teacher ID</label>
             @*instead of this-Input type text <input></input>*@
             @Html.ValidationMessageFor(x => x.TeacherId, "", new { @class = "error" })
             @Html.TextBoxFor(x => x.TeacherId, new { @class = "form-control" })

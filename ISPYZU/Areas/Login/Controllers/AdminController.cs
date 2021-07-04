@@ -15,9 +15,17 @@ namespace ISPYZU.Areas.Login.Controllers
         public ActionResult Ajax(string id)
         {
             if (Request.IsAjaxRequest())
+            {
                 return PartialView(id);
+            }
+               
             else
+            {
                 return View(id);
+                
+            }
+               
+
         }
 
         

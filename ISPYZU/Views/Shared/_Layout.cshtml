@@ -8,8 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-     <div class=" navbar navbar-inverse navbar-fixed-top">
-   
+    <div class=" navbar navbar-inverse navbar-fixed-top">
+
 
         <div class="container">
             <div class="navbar-header">
@@ -21,20 +21,20 @@
                 @Html.ActionLink("ISPYZU", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
 
             </div>
-             <div class="navbar-collapse collapse">
-           
+            <div class="navbar-collapse collapse">
+
 
 
                 <ul class="nav navbar-nav">
-                
 
 
-                    <li >@Html.ActionLink("Home", "Index", "Home", new { area = "", id = "" }, null)</li>
-                    <li >@Html.ActionLink("Courses", "Index", "Home", new { area = "", id = "" }, null)</li>
-                    <li >@Html.ActionLink("Faculty", "Index", "Home", new { area = "", id = "" }, null)</li>
-                    <li >@Html.ActionLink("Campus life", "Index", "Home", new { area = "", id = "" }, null)</li>
-                    <li >@Html.ActionLink("About", "About", "Home", new { area = "", id = "" }, null)</li>
-                    <li >@Html.ActionLink("Contact", "Contact", "Home", new { area = "", id = "" }, null)</li>
+
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Faculty", "Index", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Campus life", "Index", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new { area = "", id = "" }, null)</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "", id = "" }, null)</li>
                 </ul>
 
 
@@ -55,7 +55,7 @@
 
                     else
                     {
-                        <li>@Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "Ajax" }, null)</li>
+                        <li>@Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "StudentLogin" }, null)</li>
                     }
 
 
@@ -84,8 +84,8 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
     <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
 </body>

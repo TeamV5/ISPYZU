@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model IEnumerable<ISPYZU.Models.Student>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -20,38 +21,27 @@
                 @Html.ActionLink("ISPYZU", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right"></ul>
-                <ul class="nav navbar-nav"></ul>
+                
+                <ul class="nav navbar-nav navbar-right">
 
-                <ul class="nav navbar-nav navbar-right" style="color:white">
+                        <li> @Html.ActionLink("My Account", "Details", "Teachers", new { area = "Login", id =Session["TeacherId"] }, new { @class = "navbar -brand" })</li>
 
+                        <li> @Html.ActionLink("Notification", "TeacherDashBoard", "Admin", new { area = "Login" }, new { @class = "navbar-brand" })</li>
+                  
 
+                
 
-
-
-                    @if (Session["UserName"] != null)
+                    @if (Session["TeacherId"] != null)
                     {
-                        @Html.ActionLink("Admin", "AdminDashBoard", "Admin", new { area = "Login", id = "UserDashBoard" }, null)
-                        <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Admin") </h4>
-
+                        <li class="active">
+                            
+                                @Html.ActionLink("Logout", "Logout", "Admin")
+                            
+                        </li>
                     }
-                    else if (Session["StudentId"] != null)
-                    {
-                        @Html.ActionLink("Account", "StudentDashBoard", "Admin", new { area = "Login", id = "StudentDashBoard" }, null)
-                        <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Admin") </h4>
-
-                    }
-                    else if (Session["TeacherId"] != null)
-                    {
-                        @Html.ActionLink("Account", "TeacherDashBoard", "Admin", new { area = "Login", id = "TeacherDashBoard" }, null)
-                        <h4 style="color:white">  @Html.ActionLink("Logout", "Logout", "Admin") </h4>
-
-                    }
-
-
                     else
                     {
-                        <li>@Html.ActionLink("Login", "Ajax", "Admin", new { area = "Login", id = "Ajax" }, null)</li>
+                        <li>@Html.ActionLink("ISPYZU", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
                     }
 
                 </ul>
@@ -72,9 +62,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    <script src="~/Scripts/jquery.validate.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
-
-
+    <script src="~/Scripts/jquery.validate.js"></script>
 </body>
 </html>
