@@ -226,6 +226,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="IMG\im 1.jpg" />
+    <Content Include="IMG\im 2.jpg" />
+    <Content Include="IMG\im 3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Login\Views\web.config" />
@@ -304,6 +307,8 @@
     <Content Include="Scripts\layoutmain.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\slick.min.js" />
     <Content Include="Scripts\waypoints.min.js" />
     <Content Include="Scripts\wow.min.js" />

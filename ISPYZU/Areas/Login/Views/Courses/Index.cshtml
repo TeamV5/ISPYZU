@@ -18,37 +18,39 @@
             @Html.DisplayNameFor(model => model.CourseId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Majors.MajorName)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.CourseName)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Majors.MajorName)
+        </th>
+
         <th></th>
     </tr>
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Majors.MajorName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseName)
-            </td>
-            <td>
-                @if (Session["UserName"] != null)
-                {
-                    @Html.ActionLink("Edit", "Edit", new { id = item.CourseId })
-                    @Html.ActionLink("Details", "Details", new { id = item.CourseId })
-                    @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Majors.MajorName)
+        </td>
 
-                }
+        <td>
+            @if (Session["UserName"] != null)
+            {
+                @Html.ActionLink("Edit", "Edit", new { id = item.CourseId })
+                @Html.ActionLink("Details", "Details", new { id = item.CourseId })
+                @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })
 
-            </td>
-        </tr>
+            }
+
+        </td>
+    </tr>
     }
 
 </table>

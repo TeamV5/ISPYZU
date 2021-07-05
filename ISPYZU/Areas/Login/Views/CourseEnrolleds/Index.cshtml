@@ -4,56 +4,77 @@
     ViewBag.Title = "Index";
 }
 
-<h2 class="text-center">Course Enrolled</h2>
+
 
 
 @if (Session["UserName"] != null)
 {
+    <h2 class="text-center">Course Enrolled</h2>
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
 }
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CEId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Courses.CourseName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Student.Name)
-        </th>
-        <th>
-            Teacher @Html.DisplayNameFor(model => model.Teacher.Name)
-        </th>
-        <th></th>
-    </tr>
+@if (Session["StudentId"] != null)
+{
+    <h2 class="text-center">Course Enrollment</h2>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
 
-    @foreach (var item in Model)
-    {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CEId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Courses.CourseName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Student.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Teacher.Name)
-        </td>
-        @if (Session["UserName"] != null)
-        {
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.CEId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.CEId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.CEId })
-            </td>
-        }
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CEId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Courses.CourseName)
+            </th>
+            @if (Session["StudentId"] == null)
+            {
+                <th>
+                    @Html.DisplayNameFor(model => model.Student.Name)
+                </th>
+            }
+
+            <th>
+                Teacher @Html.DisplayNameFor(model => model.Teacher.Name)
+            </th>
+            <th></th>
         </tr>
-    }
 
-</table>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                   
+                    @Html.DisplayFor(modelItem => item.CEId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Courses.CourseName)
+                </td>
+                @if (Session["StudentId"] == null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Student.Name)
+                    </td>
+                }
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Teacher.Name)
+
+                </td>
+
+                @if (Session["UserName"] != null)
+                {
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CEId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.CEId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CEId })
+                    </td>
+                }
+            </tr>
+        }
+
+    </table>

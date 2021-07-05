@@ -3,7 +3,7 @@
     ViewBag.Title = "TeacherDashBoard";
 }
 
-<h2>TeacherDashBoard</h2>
+
 
 
 @* settings for ajax*@
@@ -32,7 +32,7 @@
             <div class="text-center">
                 <button>@Ajax.ActionLink("Add Student", "Index", "Students", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
                 <button>@Ajax.ActionLink("Courses", "Index", "Courses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
-                <button>@Ajax.ActionLink("Add Current/Running Courses", "Index", "RunningCourses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
+                <button>@Ajax.ActionLink("Current/Running Courses", "Index", "RunningCourses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
                 <button>@Ajax.ActionLink("Colleges", "Index", "Colleges", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
                 <button> @Ajax.ActionLink("Majors", "Index", "Majors", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" }) </button>
                 <button>@Ajax.ActionLink("Enrolled Courses", "Index", "CourseEnrolleds", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>

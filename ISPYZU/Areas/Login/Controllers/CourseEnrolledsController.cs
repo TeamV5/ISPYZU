@@ -41,7 +41,18 @@ namespace ISPYZU.Areas.Login.Controllers
         {
             ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
             ViewBag.StudentId = new SelectList(db.Students, "StudentId", "Name");
-            ViewBag.TeacherId = new SelectList(db.Teachers, "TeacherId", "Name");
+           /* if (Session["StudentId"] != null)
+            {
+                
+                ViewBag.StudentId = Session["StudentId"];
+
+            }
+            else
+            {
+                ViewBag.StudentId = new SelectList(db.Students, "StudentId", "Name");
+            }
+            */
+                ViewBag.TeacherId = new SelectList(db.Teachers, "TeacherId", "Name");
             return View();
         }
 
@@ -61,6 +72,16 @@ namespace ISPYZU.Areas.Login.Controllers
 
             ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName", courseEnrolled.CourseId);
             ViewBag.StudentId = new SelectList(db.Students, "StudentId", "Name", courseEnrolled.StudentId);
+            /*if (Session["StudentId"] != null)
+            {
+
+                ViewBag.StudentId = Session["StudentId"];
+
+            }
+            else
+            {
+                ViewBag.StudentId = new SelectList(db.Students, "StudentId", "Name");
+            }*/
             ViewBag.TeacherId = new SelectList(db.Teachers, "TeacherId", "Name", courseEnrolled.TeacherId);
             return View(courseEnrolled);
         }

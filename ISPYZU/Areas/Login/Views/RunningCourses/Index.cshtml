@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<ISPYZU.Models.RunningCourses>
 
+
 @{
     ViewBag.Title = "Index";
 }
@@ -13,7 +14,7 @@ else
 }
 
 
-@if (Session["UserName"] != null || Session["TeacherID"] != null)
+@if (Session["UserName"] != null)
 {
     <p>
         @Html.ActionLink("Create New", "Create")
@@ -38,6 +39,7 @@ else
     {
     <tr>
         <td>
+
             @Html.DisplayFor(modelItem => item.RCId)
         </td>
         <td>
@@ -46,15 +48,26 @@ else
         <td>
             @Html.DisplayFor(modelItem => item.Teacher.Name)
         </td>
-        @if (Session["UserName"] != null || Session["TeacherID"] != null)
+        @if (Session["UserName"] != null)
         {
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.RCId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.RCId }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.RCId })
+                @Html.ActionLink("Details", "Details", new { id = item.RCId })
                 @Html.ActionLink("Delete", "Delete", new { id = item.RCId })
             </td>
         }
-        </tr>
+
+
+        @*@if (Session["StudentId"] != null)
+        {
+            <td>
+                @Html.ActionLink("Join", "Edit", "CourseEnrolleds", new { area = "login", id = item.RCId })
+            </td>
+
+        }
+            *@
+
+    </tr>
     }
 
 </table>

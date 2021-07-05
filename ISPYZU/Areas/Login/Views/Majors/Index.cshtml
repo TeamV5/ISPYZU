@@ -19,11 +19,12 @@
             @Html.DisplayNameFor(model => model.MajorId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Colleges.CollegeName)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.MajorName)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Colleges.CollegeName)
+        </th>
+
         <th></th>
     </tr>
 
@@ -34,11 +35,12 @@
             @Html.DisplayFor(modelItem => item.MajorId)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Colleges.CollegeName)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.MajorName)
         </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Colleges.CollegeName)
+        </td>
+
         @if (Session["UserName"] != null)
         {
             <td>
@@ -47,7 +49,7 @@
                 @Html.ActionLink("Delete", "Delete", new { id = item.MajorId })
             </td>
         }
-        </tr>
+    </tr>
     }
 
 </table>

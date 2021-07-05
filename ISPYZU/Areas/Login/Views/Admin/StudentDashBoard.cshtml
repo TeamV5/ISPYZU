@@ -30,15 +30,18 @@
             <ul id="loading" style="display:none;color:black;">(it's loading by ajax)</ul>
 
             <div class="text-center">
-                
+
                 <button>@Ajax.ActionLink("Courses", "Index", "Courses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
                 <button>@Ajax.ActionLink("Available Courses", "Index", "RunningCourses", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
+                <button> @Ajax.ActionLink("Course Enrollment", "Create", "CourseEnrolleds", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" }) </button>
+                @*<button> @Ajax.ActionLink("Course Enrollment", "Create", "CourseEnrolleds", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" }) </button>*@
                 <button>@Ajax.ActionLink("Colleges", "Index", "Colleges", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" })</button>
                 <button> @Ajax.ActionLink("Majors", "Index", "Majors", new { area = "Login", id = "" }, ajaxOptions, new { @class = "navbar-brand" }) </button>
-               
+
+
             </div>
 
-
+                
         </div>
     </div>
     <div class="col-md-12" style="border:0px solid lightblue; margin-top:10px;padding:10px;overflow-y:auto;overflow-x:hidden" ;>
