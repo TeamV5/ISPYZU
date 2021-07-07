@@ -22,6 +22,9 @@
     </p>
 }
 
+
+
+
     <table class="table">
         <tr>
             <th>
@@ -46,9 +49,10 @@
 
         @foreach (var item in Model)
         {
+
             <tr>
                 <td>
-                   
+
                     @Html.DisplayFor(modelItem => item.CEId)
                 </td>
                 <td>
@@ -61,10 +65,15 @@
                     </td>
                 }
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Teacher.Name)
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Teacher.Name)
+                    </td>
+                      @*  @if (Session["TeacherId"].ToString() == item.Teacher.TeacherId)
+                        {
+                        }
+                          *@
 
-                </td>
+                   
 
                 @if (Session["UserName"] != null)
                 {

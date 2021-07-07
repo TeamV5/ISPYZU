@@ -229,6 +229,7 @@
     <Content Include="IMG\im 1.jpg" />
     <Content Include="IMG\im 2.jpg" />
     <Content Include="IMG\im 3.jpg" />
+    <Content Include="IMG\yz.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Login\Views\web.config" />
