@@ -39,17 +39,15 @@
         <td>
             @Html.DisplayFor(modelItem => item.Majors.MajorName)
         </td>
+        @if (Session["UserName"] != null)
+        {
+            <td>
 
-        <td>
-            @if (Session["UserName"] != null)
-            {
-                @Html.ActionLink("Edit", "Edit", new { id = item.CourseId })
-                @Html.ActionLink("Details", "Details", new { id = item.CourseId })
-                @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })
-
-            }
-
-        </td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.CourseId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CourseId })|
+                @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })|
+            </td>
+        }
     </tr>
     }
 
