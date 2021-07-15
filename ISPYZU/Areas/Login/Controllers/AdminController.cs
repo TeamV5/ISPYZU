@@ -11,33 +11,23 @@ namespace ISPYZU.Areas.Login.Controllers
     {
          TestDbContext adminDB = new TestDbContext();
 
-
         public ActionResult Ajax(string id)
         {
             if (Request.IsAjaxRequest())
             {
                 return PartialView(id);
-            }
-               
+            } 
             else
             {
-                return View(id);
-                
+                return View(id);   
             }
-               
 
         }
-
-        
-        
         public ActionResult StudentLogin(string id)
         {
             return View();
 
         }
-
-
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]

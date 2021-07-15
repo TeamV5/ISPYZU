@@ -153,6 +153,10 @@
     <Compile Include="Migrations\202106301911584_createdb.designer.cs">
       <DependentUpon>202106301911584_createdb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107091740145_createdb1.cs" />
+    <Compile Include="Migrations\202107091740145_createdb1.designer.cs">
+      <DependentUpon>202107091740145_createdb1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Colleges.cs" />
     <Compile Include="Models\CourseEnrolled.cs" />
@@ -313,14 +317,25 @@
     <Content Include="Scripts\slick.min.js" />
     <Content Include="Scripts\waypoints.min.js" />
     <Content Include="Scripts\wow.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="vue\app.js" />
+    <Content Include="vue\picture\noman.jpg" />
+    <Content Include="vue\picture\rayhan.jpg" />
+    <Content Include="vue\picture\shorif.jpg" />
+    <Content Include="vue\picture\siam.jpg" />
+    <Content Include="vue\picture\zahid.jpg" />
+    <Content Include="vue\style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -355,6 +370,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202106301911584_createdb.resx">
       <DependentUpon>202106301911584_createdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107091740145_createdb1.resx">
+      <DependentUpon>202107091740145_createdb1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

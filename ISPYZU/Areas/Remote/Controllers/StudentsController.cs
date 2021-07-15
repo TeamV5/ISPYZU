@@ -22,8 +22,8 @@ namespace ISPYZU.Areas.Remote.Controllers
         {
             bool result = db.Teachers.FirstOrDefault(s => s.TeacherId == TeacherId) == null;
             return Json(result, JsonRequestBehavior.AllowGet);
-
         }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
